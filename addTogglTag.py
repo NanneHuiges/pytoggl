@@ -82,17 +82,17 @@ def main():
             log('No running entry and not creating one per request. Finished!')
             return 0
 
-      #start new entry
-    workspace = pt.getWorkspace()
-    if not workspace:
-        log('Cannot find a workspace to create entry in. Exit!')
-        return 1
+          #start new entry
+        workspace = pt.getWorkspace()
+        if not workspace:
+            log('Cannot find a workspace to create entry in. Exit!')
+            return 1
 
-    #create entry
-    current = pt.createEntry(workspace['id'], entryName)
-    if not current:
-        log('Failed creating a workspace. Exit!')
-        return 1
+        #create entry
+        current = pt.createEntry(workspace['id'], entryName)
+        if not current:
+            log('Failed creating a workspace. Exit!')
+            return 1
 
     # Entry is running
     tag = pt.createTag(current['wid'], tagname)
