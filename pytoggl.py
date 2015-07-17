@@ -153,7 +153,7 @@ class PyToggl:
     def addTagToEntry(self, entry, name):
         """Adds a tag to an entry"""
         self._logMsg('Adding tag to entry')
-        tags = entry['tags']
+        tags = entry.get('tags', [])
         tags.append(name)
         data = json.dumps({"time_entry": {"tags": tags}})
         res = self._put("time_entries/"+str(entry['id']), data)
