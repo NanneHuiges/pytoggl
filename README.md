@@ -13,6 +13,8 @@ If there isn't, create an entry with the tag.
 
 You can obviously send something else, on a different trigger.
 
+* **Don't forget to add your API-token**
+
 	usage: addTogglTag.py [-h] [-v] -t TAG [-w WORKSPACE] [-n ENTRYDNAME]
 	                      [--dontcreate]
 
