@@ -1,7 +1,8 @@
 # pytoggl
 
-* Includes simple wrapper for the Toggl REST-API
-* Includes script to add a tag to an entry
+* pytoggl.py: simple wrapper for the Toggl REST-API
+* addTogglTag.py: script to add a tag to an entry
+* post-commit: git-hook example to add current branch as a tag
 
 ## Use case the git-hook
 The raison d'etre of this whole thing is to remember what branches
