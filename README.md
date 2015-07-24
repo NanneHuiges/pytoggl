@@ -4,7 +4,7 @@
 * addTogglTag.py: script to add a tag to an entry
 * post-commit: git-hook example to add current branch as a tag
 
-## Use case the git-hook
+## Use case for the git-hook
 The raison d'etre of this whole thing is to remember what branches
 have been getting some keyboardtime
 
@@ -17,7 +17,7 @@ If there isn't, create an entry with the tag.
 You can obviously send something else, on a different trigger.
 See the `addTogglTag.py` use case for that
 
-## Use case addTogglTag
+## Use case for addTogglTag
 You can call this on any trigger with any tagname
 
 **Don't forget to add your API-token**
@@ -42,7 +42,7 @@ You can call this on any trigger with any tagname
 	  --dontcreate          Don't create a new entry if none is running
 
 
-## Use case PyToggl class
+## Use case for the PyToggl class
 While it could be seen as (the start of) an API wrapper, currently the
 clearest usecase would be "used in addTogglTag" :)
 
